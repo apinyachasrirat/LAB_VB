@@ -1,0 +1,9 @@
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\bin\Debug\lab1.exe
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\bin\Debug\lab1.pdb
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\bin\Debug\lab1.xml
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.lab1.resources
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.Resources.resources
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.vbproj.GenerateResource.Cache
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.exe
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.xml
+C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.pdb
