@@ -7,3 +7,6 @@ C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.vbproj.GenerateResour
 C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.exe
 C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.xml
 C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.pdb
+C:\labVB\lab1\lab1\obj\x86\Debug\lab1.exe
+C:\labVB\lab1\lab1\obj\x86\Debug\lab1.xml
+C:\labVB\lab1\lab1\obj\x86\Debug\lab1.pdb
