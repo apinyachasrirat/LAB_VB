@@ -10,3 +10,13 @@ C:\Users\Coffee\Desktop\labVB\lab1\lab1\obj\x86\Debug\lab1.pdb
 C:\labVB\lab1\lab1\obj\x86\Debug\lab1.exe
 C:\labVB\lab1\lab1\obj\x86\Debug\lab1.xml
 C:\labVB\lab1\lab1\obj\x86\Debug\lab1.pdb
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.exe
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.xml
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.pdb
+D:\Project3Q61\Project3Q61\bin\Debug\lab1.exe
+D:\Project3Q61\Project3Q61\bin\Debug\lab1.pdb
+D:\Project3Q61\Project3Q61\bin\Debug\lab1.xml
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.lab1.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.Form2.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.Resources.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.vbproj.GenerateResource.Cache
