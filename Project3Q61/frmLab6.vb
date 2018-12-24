@@ -5,7 +5,7 @@
     Private Sub chkCarForMe_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkCarForMe.CheckedChanged
 
         If chkCarForMe.Checked = False Then
-            message = MessageBox.Show("คุณต้องการยกเลิกการซื้อรถใช่หรือไม่", "***คำเตือน***", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
+            message = MessageBox.Show("คุณต้องการยกเลิกการซื้อรถใช่หรือไม่", "****คำเตือน****", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
             If message = Windows.Forms.DialogResult.Yes Then
                 lblPaidPrice.Text = ""
                 GroupBox1.Enabled = False
