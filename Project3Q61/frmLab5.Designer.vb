@@ -34,7 +34,7 @@ Partial Class frmLab5
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.radOther = New System.Windows.Forms.RadioButton()
         Me.radMember = New System.Windows.Forms.RadioButton()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.gpbPaid = New System.Windows.Forms.GroupBox()
         Me.radCredit = New System.Windows.Forms.RadioButton()
         Me.radPaid = New System.Windows.Forms.RadioButton()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -45,15 +45,15 @@ Partial Class frmLab5
         Me.lblCredit = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
+        Me.gpbPaid.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label1.Location = New System.Drawing.Point(165, 37)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(216, 22)
+        Me.Label1.Size = New System.Drawing.Size(248, 22)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "โปรแกรมคำนวณการขาย"
         '
@@ -97,12 +97,13 @@ Partial Class frmLab5
         '
         Me.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTotal.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblTotal.Location = New System.Drawing.Point(177, 204)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Size = New System.Drawing.Size(186, 22)
         Me.lblTotal.TabIndex = 0
+        Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txtProduct
         '
@@ -111,7 +112,8 @@ Partial Class frmLab5
         Me.txtProduct.Multiline = True
         Me.txtProduct.Name = "txtProduct"
         Me.txtProduct.Size = New System.Drawing.Size(185, 21)
-        Me.txtProduct.TabIndex = 1
+        Me.txtProduct.TabIndex = 0
+        Me.txtProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtPrice
         '
@@ -121,6 +123,7 @@ Partial Class frmLab5
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(185, 21)
         Me.txtPrice.TabIndex = 1
+        Me.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtUnit
         '
@@ -129,10 +132,12 @@ Partial Class frmLab5
         Me.txtUnit.Multiline = True
         Me.txtUnit.Name = "txtUnit"
         Me.txtUnit.Size = New System.Drawing.Size(185, 21)
-        Me.txtUnit.TabIndex = 1
+        Me.txtUnit.TabIndex = 2
+        Me.txtUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.GroupBox1.Controls.Add(Me.radOther)
         Me.GroupBox1.Controls.Add(Me.radMember)
         Me.GroupBox1.Location = New System.Drawing.Point(57, 258)
@@ -164,16 +169,17 @@ Partial Class frmLab5
         Me.radMember.Text = "สมาชิก"
         Me.radMember.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'gpbPaid
         '
-        Me.GroupBox2.Controls.Add(Me.radCredit)
-        Me.GroupBox2.Controls.Add(Me.radPaid)
-        Me.GroupBox2.Location = New System.Drawing.Point(275, 258)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(193, 45)
-        Me.GroupBox2.TabIndex = 2
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "การชำระเงิน"
+        Me.gpbPaid.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.gpbPaid.Controls.Add(Me.radCredit)
+        Me.gpbPaid.Controls.Add(Me.radPaid)
+        Me.gpbPaid.Location = New System.Drawing.Point(275, 258)
+        Me.gpbPaid.Name = "gpbPaid"
+        Me.gpbPaid.Size = New System.Drawing.Size(193, 45)
+        Me.gpbPaid.TabIndex = 2
+        Me.gpbPaid.TabStop = False
+        Me.gpbPaid.Text = "การชำระเงิน"
         '
         'radCredit
         '
@@ -227,44 +233,48 @@ Partial Class frmLab5
         'lblDiscount
         '
         Me.lblDiscount.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblDiscount.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblDiscount.BackColor = System.Drawing.SystemColors.ControlLight
         Me.lblDiscount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblDiscount.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblDiscount.Location = New System.Drawing.Point(177, 326)
         Me.lblDiscount.Name = "lblDiscount"
         Me.lblDiscount.Size = New System.Drawing.Size(186, 22)
         Me.lblDiscount.TabIndex = 0
+        Me.lblDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblPaid
         '
         Me.lblPaid.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblPaid.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblPaid.BackColor = System.Drawing.SystemColors.ControlLight
         Me.lblPaid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblPaid.Location = New System.Drawing.Point(177, 364)
         Me.lblPaid.Name = "lblPaid"
         Me.lblPaid.Size = New System.Drawing.Size(186, 22)
         Me.lblPaid.TabIndex = 0
+        Me.lblPaid.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblCredit
         '
         Me.lblCredit.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblCredit.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblCredit.BackColor = System.Drawing.SystemColors.ControlLight
         Me.lblCredit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblCredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblCredit.Location = New System.Drawing.Point(177, 405)
         Me.lblCredit.Name = "lblCredit"
         Me.lblCredit.Size = New System.Drawing.Size(186, 22)
         Me.lblCredit.TabIndex = 0
+        Me.lblCredit.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(194, 454)
+        Me.btnCalculate.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnCalculate.Location = New System.Drawing.Point(223, 454)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(111, 41)
         Me.btnCalculate.TabIndex = 3
         Me.btnCalculate.Text = "คำนวณ"
-        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.btnCalculate.UseVisualStyleBackColor = False
         '
         'frmLab5
         '
@@ -272,7 +282,7 @@ Partial Class frmLab5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(506, 533)
         Me.Controls.Add(Me.btnCalculate)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.gpbPaid)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtUnit)
         Me.Controls.Add(Me.txtPrice)
@@ -293,8 +303,8 @@ Partial Class frmLab5
         Me.Text = "frmLab5"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.gpbPaid.ResumeLayout(False)
+        Me.gpbPaid.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -311,7 +321,7 @@ Partial Class frmLab5
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents radOther As System.Windows.Forms.RadioButton
     Friend WithEvents radMember As System.Windows.Forms.RadioButton
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents gpbPaid As System.Windows.Forms.GroupBox
     Friend WithEvents radCredit As System.Windows.Forms.RadioButton
     Friend WithEvents radPaid As System.Windows.Forms.RadioButton
     Friend WithEvents Label6 As System.Windows.Forms.Label

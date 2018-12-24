@@ -117,7 +117,7 @@ Partial Class frmLab4
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(123, 23)
         Me.Label8.TabIndex = 1
-        Me.Label8.Text = "หักค่าลเหย่อนส่วนตัว"
+        Me.Label8.Text = "หักค่าลดหย่อนส่วนตัว"
         '
         'Label9
         '
@@ -254,14 +254,15 @@ Partial Class frmLab4
         '
         'btnProcess
         '
+        Me.btnProcess.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnProcess.Location = New System.Drawing.Point(432, 271)
         Me.btnProcess.Name = "btnProcess"
         Me.btnProcess.Size = New System.Drawing.Size(176, 89)
         Me.btnProcess.TabIndex = 3
         Me.btnProcess.Text = "คำนวณ"
-        Me.btnProcess.UseVisualStyleBackColor = True
+        Me.btnProcess.UseVisualStyleBackColor = False
         '
-        'frmAssign4
+        'frmLab4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -285,7 +286,7 @@ Partial Class frmLab4
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "frmAssign4"
+        Me.Name = "frmLab4"
         Me.Text = "frmAssign4"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

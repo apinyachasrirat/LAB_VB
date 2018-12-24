@@ -1,6 +1,5 @@
 ﻿Public Class frmLab5
-    Dim decTotal, decDiscount, decNet, decCredit As Decimal
-
+    Dim dectotal, decDiscount, decNet, decCredit As Double
     Private Sub txtPrice_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtPrice.TextChanged
         lblTotal.Text = Val(txtPrice.Text)
     End Sub
@@ -10,17 +9,18 @@
     End Sub
 
     Private Sub radMember_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radMember.CheckedChanged
-        GroupBox2.Enabled = True
+        gpbPaid.Enabled = True
         radPaid.Checked = True
         radCredit.Checked = False
         lblCredit.Text = ""
         lblDiscount.Text = ""
         lblPaid.Text = ""
+
     End Sub
 
     Private Sub radOther_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radOther.CheckedChanged
         radPaid.Checked = True
-        GroupBox2.Enabled = False
+        gpbPaid.Enabled = False
         lblCredit.Text = ""
         lblDiscount.Text = ""
         lblPaid.Text = ""
@@ -42,15 +42,19 @@
             txtUnit.Clear()
         End If
         If radMember.Checked = True Then
-            If decTotal > 10000 Then
-                decDiscount = decTotal * 15 / 100
-            ElseIf decTotal > 5000 Then
-                decDiscount = decTotal * 10 / 100
-            ElseIf decTotal > 1000 Then
-                decDiscount = decTotal * 5 / 100
+            If dectotal < 1000 Then
+                decDiscount = dectotal * 0
+            ElseIf dectotal < 5000 Then
+                decDiscount = dectotal * 5 / 100
+            ElseIf dectotal < 1000 Then
+                decDiscount = dectotal * 10 / 100
             Else
-                decDiscount = 0
+                decDiscount = dectotal * 0.15
             End If
+        ElseIf radOther.Checked = True Then
+
+            decDiscount = 0
+
         End If
         decNet = decTotal - decDiscount
         If radPaid.Checked = True Then
@@ -69,4 +73,7 @@
             lblCredit.Text = decCredit
         End If
     End Sub
+
+   
+    
 End Class

@@ -60,6 +60,7 @@ Partial Class frmPractice3
         Me.ใบงานท4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ใบงานท5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ใบงานท6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -258,7 +259,7 @@ Partial Class frmPractice3
         '
         'ใบงานToolStripMenuItem
         '
-        Me.ใบงานToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ใToolStripMenuItem, Me.ใบงานท2ToolStripMenuItem, Me.ใบงานท3ToolStripMenuItem, Me.ใบงานท4ToolStripMenuItem, Me.ใบงานท5ToolStripMenuItem})
+        Me.ใบงานToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ใToolStripMenuItem, Me.ใบงานท2ToolStripMenuItem, Me.ใบงานท3ToolStripMenuItem, Me.ใบงานท4ToolStripMenuItem, Me.ใบงานท5ToolStripMenuItem, Me.ใบงานท6ToolStripMenuItem})
         Me.ใบงานToolStripMenuItem.Name = "ใบงานToolStripMenuItem"
         Me.ใบงานToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
         Me.ใบงานToolStripMenuItem.Text = "ใบงาน "
@@ -301,6 +302,12 @@ Partial Class frmPractice3
         Me.MenuStrip1.Size = New System.Drawing.Size(808, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'ใบงานท6ToolStripMenuItem
+        '
+        Me.ใบงานท6ToolStripMenuItem.Name = "ใบงานท6ToolStripMenuItem"
+        Me.ใบงานท6ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ใบงานท6ToolStripMenuItem.Text = "ใบงานที่ 6"
         '
         'frmPractice3
         '
@@ -357,4 +364,5 @@ Partial Class frmPractice3
     Friend WithEvents ใบงานท4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ใบงานท5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents ใบงานท6ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

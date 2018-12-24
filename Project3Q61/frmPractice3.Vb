@@ -45,4 +45,9 @@
         Dim frmMyL5 As frmLab5 = New frmLab5
         frmMyL5.Show()
     End Sub
+
+    Private Sub ใบงานท6ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ใบงานท6ToolStripMenuItem.Click
+        Dim frmMyL6 As frmLab6 = New frmLab6
+        frmMyL6.Show()
+    End Sub
 End Class
