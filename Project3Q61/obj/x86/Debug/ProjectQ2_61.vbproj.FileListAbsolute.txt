@@ -17,3 +17,8 @@ D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice4.resources
 D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice5.resources
 D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab5.resources
 D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab6.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab7.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice7.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice6.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab8.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice8.resources

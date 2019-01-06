@@ -3,9 +3,12 @@
     Dim message As DialogResult
 
     Private Sub chkCarForMe_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkCarForMe.CheckedChanged
-
+        Dim Free1, Free2, Free3 As Integer
+        Free1 = lblFree1.Text
+        Free2 = lblFree2.Text
+        Free3 = lblFree3.Text
         If chkCarForMe.Checked = False Then
-            message = MessageBox.Show("คุณต้องการยกเลิกการซื้อรถใช่หรือไม่", "****คำเตือน****", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
+            message = MessageBox.Show("คุณต้องการยกเลิกการซื้อรถหรือไม่", "***เตือน***", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2)
             If message = Windows.Forms.DialogResult.Yes Then
                 lblPaidPrice.Text = ""
                 GroupBox1.Enabled = False
@@ -19,68 +22,80 @@
             Price = Val(lblSartPrice.Text)
             GroupBox1.Enabled = True
             GroupBox2.Enabled = True
-            lblPaidPrice.Text = Price + 25000 + 15000 + 35000
+            lblPaidPrice.Text = Price + Free1 + Free2 + Free3
             Exit Sub
         End If
 
     End Sub
 
     Private Sub chkItemsAdd1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkItemsAdd1.CheckedChanged
+        Dim ItemsPrice1 As Integer
+        ItemsPrice1 = lblItemsPrice1.Text
         If chkItemsAdd1.Checked = True Then
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) + 40000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + ItemsPrice1
         Else
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) - 40000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - ItemsPrice1
         End If
 
     End Sub
 
     Private Sub chkItemsAdd2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkItemsAdd2.CheckedChanged
-
+        Dim ItemsPrice2 As Integer
+        ItemsPrice2 = lblItemsPrice2.Text
         If chkItemsAdd2.Checked = True Then
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) + 50000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + ItemsPrice2
         Else
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) - 50000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - ItemsPrice2
         End If
     End Sub
 
     Private Sub chkItemsAdd3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkItemsAdd3.CheckedChanged
-       
+        Dim ItemsPrice3 As Integer
+        ItemsPrice3 = lblItemsPrice3.Text
         If chkItemsAdd3.Checked = True Then
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) + 20000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + ItemsPrice3
         Else
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) - 20000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - ItemsPrice3
         End If
     End Sub
 
     Private Sub chkItemsAdd4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkItemsAdd4.CheckedChanged
+        Dim ItemsPrice4 As Integer
+        ItemsPrice4 = lblItemsPrice4.Text
         If chkItemsAdd4.Checked = True Then
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) + 30000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + ItemsPrice4
         Else
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) - 30000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - ItemsPrice4
         End If
     End Sub
 
     Private Sub chkFree1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkFree1.CheckedChanged
+        Dim ItemsFree1 As Integer
+        ItemsFree1 = lblFree1.Text
         If chkFree1.Checked = True Then
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) - 25000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - ItemsFree1
         Else
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) + 25000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + ItemsFree1
         End If
     End Sub
 
     Private Sub chkFree2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkFree2.CheckedChanged
+        Dim ItemsFree2 As Integer
+        ItemsFree2 = lblFree2.Text
         If chkFree2.Checked = True Then
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) - 15000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - ItemsFree2
         Else
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) + 15000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + ItemsFree2
         End If
     End Sub
 
     Private Sub chkFree3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkFree3.CheckedChanged
+        Dim ItemsFree3 As Integer
+        ItemsFree3 = lblFree3.Text
         If chkFree3.Checked = True Then
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) - 35000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - ItemsFree3
         Else
-            lblPaidPrice.Text = Val(lblPaidPrice.Text) + 35000
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + ItemsFree3
         End If
     End Sub
 

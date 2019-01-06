@@ -50,4 +50,24 @@
         Dim frmMyL6 As frmLab6 = New frmLab6
         frmMyL6.Show()
     End Sub
+
+    Private Sub ใบงานมรา7ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ใบงานมรา7ToolStripMenuItem.Click
+        Dim frmMyL7 As frmLab7 = New frmLab7
+        frmMyL7.Show()
+    End Sub
+
+    Private Sub แบบฝกปฏบต6ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles แบบฝกปฏบต6ToolStripMenuItem.Click
+        Dim frmMyP6 As frmPractice6 = New frmPractice6
+        frmMyP6.Show()
+    End Sub
+
+    Private Sub แบบฝกปฏบต7ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles แบบฝกปฏบต7ToolStripMenuItem.Click
+        Dim frmMyP7 As frmPractice7 = New frmPractice7
+        frmMyP7.Show()
+    End Sub
+
+    Private Sub แบบฝกปฎบต8ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles แบบฝกปฎบต8ToolStripMenuItem.Click
+        Dim frmMyP8 As frmPractice8 = New frmPractice8
+        frmMyP8.Show()
+    End Sub
 End Class

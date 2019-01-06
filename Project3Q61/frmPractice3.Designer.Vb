@@ -53,14 +53,18 @@ Partial Class frmPractice3
         Me.แบบฝกปฏบต3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.แบบฝกปฏบต4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.แบบฝกปฏบต5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.แบบฝกปฏบต6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.แบบฝกปฏบต7ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ใบงานToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ใToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ใบงานท2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ใบงานท3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ใบงานท4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ใบงานท5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ใบงานท6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ใบงานมรา7ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.แบบฝกปฎบต8ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -74,7 +78,7 @@ Partial Class frmPractice3
         Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 24)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(808, 357)
+        Me.PictureBox1.Size = New System.Drawing.Size(955, 613)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -222,7 +226,7 @@ Partial Class frmPractice3
         '
         'แบบฝกปฏบตToolStripMenuItem
         '
-        Me.แบบฝกปฏบตToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.แบบฝกปฏบต1ToolStripMenuItem, Me.แบบฝกปฏบต2ToolStripMenuItem, Me.แบบฝกปฏบต3ToolStripMenuItem, Me.แบบฝกปฏบต4ToolStripMenuItem, Me.แบบฝกปฏบต5ToolStripMenuItem})
+        Me.แบบฝกปฏบตToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.แบบฝกปฏบต1ToolStripMenuItem, Me.แบบฝกปฏบต2ToolStripMenuItem, Me.แบบฝกปฏบต3ToolStripMenuItem, Me.แบบฝกปฏบต4ToolStripMenuItem, Me.แบบฝกปฏบต5ToolStripMenuItem, Me.แบบฝกปฏบต6ToolStripMenuItem, Me.แบบฝกปฏบต7ToolStripMenuItem, Me.แบบฝกปฎบต8ToolStripMenuItem})
         Me.แบบฝกปฏบตToolStripMenuItem.Name = "แบบฝกปฏบตToolStripMenuItem"
         Me.แบบฝกปฏบตToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
         Me.แบบฝกปฏบตToolStripMenuItem.Text = "แบบฝึกปฏิบัติ"
@@ -230,36 +234,48 @@ Partial Class frmPractice3
         'แบบฝกปฏบต1ToolStripMenuItem
         '
         Me.แบบฝกปฏบต1ToolStripMenuItem.Name = "แบบฝกปฏบต1ToolStripMenuItem"
-        Me.แบบฝกปฏบต1ToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.แบบฝกปฏบต1ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.แบบฝกปฏบต1ToolStripMenuItem.Text = "แบบฝึกปฏิบัติ 1"
         '
         'แบบฝกปฏบต2ToolStripMenuItem
         '
         Me.แบบฝกปฏบต2ToolStripMenuItem.Name = "แบบฝกปฏบต2ToolStripMenuItem"
-        Me.แบบฝกปฏบต2ToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.แบบฝกปฏบต2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.แบบฝกปฏบต2ToolStripMenuItem.Text = "แบบฝึกปฏิบัติ 2"
         '
         'แบบฝกปฏบต3ToolStripMenuItem
         '
         Me.แบบฝกปฏบต3ToolStripMenuItem.Name = "แบบฝกปฏบต3ToolStripMenuItem"
-        Me.แบบฝกปฏบต3ToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.แบบฝกปฏบต3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.แบบฝกปฏบต3ToolStripMenuItem.Text = "แบบฝึกปฏิบัติ 3"
         '
         'แบบฝกปฏบต4ToolStripMenuItem
         '
         Me.แบบฝกปฏบต4ToolStripMenuItem.Name = "แบบฝกปฏบต4ToolStripMenuItem"
-        Me.แบบฝกปฏบต4ToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.แบบฝกปฏบต4ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.แบบฝกปฏบต4ToolStripMenuItem.Text = "แบบฝึกปฏิบัติ 4"
         '
         'แบบฝกปฏบต5ToolStripMenuItem
         '
         Me.แบบฝกปฏบต5ToolStripMenuItem.Name = "แบบฝกปฏบต5ToolStripMenuItem"
-        Me.แบบฝกปฏบต5ToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.แบบฝกปฏบต5ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.แบบฝกปฏบต5ToolStripMenuItem.Text = "แบบฝึกปฏิบัติ 5"
+        '
+        'แบบฝกปฏบต6ToolStripMenuItem
+        '
+        Me.แบบฝกปฏบต6ToolStripMenuItem.Name = "แบบฝกปฏบต6ToolStripMenuItem"
+        Me.แบบฝกปฏบต6ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.แบบฝกปฏบต6ToolStripMenuItem.Text = "แบบฝึกปฏิบัติ 6"
+        '
+        'แบบฝกปฏบต7ToolStripMenuItem
+        '
+        Me.แบบฝกปฏบต7ToolStripMenuItem.Name = "แบบฝกปฏบต7ToolStripMenuItem"
+        Me.แบบฝกปฏบต7ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.แบบฝกปฏบต7ToolStripMenuItem.Text = "แบบฝึกปฏิบัติ 7"
         '
         'ใบงานToolStripMenuItem
         '
-        Me.ใบงานToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ใToolStripMenuItem, Me.ใบงานท2ToolStripMenuItem, Me.ใบงานท3ToolStripMenuItem, Me.ใบงานท4ToolStripMenuItem, Me.ใบงานท5ToolStripMenuItem, Me.ใบงานท6ToolStripMenuItem})
+        Me.ใบงานToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ใToolStripMenuItem, Me.ใบงานท2ToolStripMenuItem, Me.ใบงานท3ToolStripMenuItem, Me.ใบงานท4ToolStripMenuItem, Me.ใบงานท5ToolStripMenuItem, Me.ใบงานท6ToolStripMenuItem, Me.ใบงานมรา7ToolStripMenuItem})
         Me.ใบงานToolStripMenuItem.Name = "ใบงานToolStripMenuItem"
         Me.ใบงานToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
         Me.ใบงานToolStripMenuItem.Text = "ใบงาน "
@@ -267,53 +283,65 @@ Partial Class frmPractice3
         'ใToolStripMenuItem
         '
         Me.ใToolStripMenuItem.Name = "ใToolStripMenuItem"
-        Me.ใToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ใToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ใToolStripMenuItem.Text = "ใบงานที่ 1"
         '
         'ใบงานท2ToolStripMenuItem
         '
         Me.ใบงานท2ToolStripMenuItem.Name = "ใบงานท2ToolStripMenuItem"
-        Me.ใบงานท2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ใบงานท2ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ใบงานท2ToolStripMenuItem.Text = "ใบงานท่ 2"
         '
         'ใบงานท3ToolStripMenuItem
         '
         Me.ใบงานท3ToolStripMenuItem.Name = "ใบงานท3ToolStripMenuItem"
-        Me.ใบงานท3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ใบงานท3ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ใบงานท3ToolStripMenuItem.Text = "ใบงานที่ 3"
         '
         'ใบงานท4ToolStripMenuItem
         '
         Me.ใบงานท4ToolStripMenuItem.Name = "ใบงานท4ToolStripMenuItem"
-        Me.ใบงานท4ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ใบงานท4ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ใบงานท4ToolStripMenuItem.Text = "ใบงานที่ 4"
         '
         'ใบงานท5ToolStripMenuItem
         '
         Me.ใบงานท5ToolStripMenuItem.Name = "ใบงานท5ToolStripMenuItem"
-        Me.ใบงานท5ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ใบงานท5ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ใบงานท5ToolStripMenuItem.Text = "ใบงานที่ 5"
+        '
+        'ใบงานท6ToolStripMenuItem
+        '
+        Me.ใบงานท6ToolStripMenuItem.Name = "ใบงานท6ToolStripMenuItem"
+        Me.ใบงานท6ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ใบงานท6ToolStripMenuItem.Text = "ใบงานที่ 6"
+        '
+        'ใบงานมรา7ToolStripMenuItem
+        '
+        Me.ใบงานมรา7ToolStripMenuItem.Name = "ใบงานมรา7ToolStripMenuItem"
+        Me.ใบงานมรา7ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ใบงานมรา7ToolStripMenuItem.Text = "ใบงานที่ 7"
         '
         'MenuStrip1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.FormatToolStripMenuItem, Me.HelpToolStripMenuItem, Me.แบบฝกปฏบตToolStripMenuItem, Me.ใบงานToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(808, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(955, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'ใบงานท6ToolStripMenuItem
+        'แบบฝกปฎบต8ToolStripMenuItem
         '
-        Me.ใบงานท6ToolStripMenuItem.Name = "ใบงานท6ToolStripMenuItem"
-        Me.ใบงานท6ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ใบงานท6ToolStripMenuItem.Text = "ใบงานที่ 6"
+        Me.แบบฝกปฎบต8ToolStripMenuItem.Name = "แบบฝกปฎบต8ToolStripMenuItem"
+        Me.แบบฝกปฎบต8ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.แบบฝกปฎบต8ToolStripMenuItem.Text = "แบบฝึกปฎิบัติ 8"
         '
         'frmPractice3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(808, 381)
+        Me.ClientSize = New System.Drawing.Size(955, 637)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -365,4 +393,8 @@ Partial Class frmPractice3
     Friend WithEvents ใบงานท5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ใบงานท6ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ใบงานมรา7ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents แบบฝกปฏบต6ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents แบบฝกปฏบต7ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents แบบฝกปฎบต8ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
