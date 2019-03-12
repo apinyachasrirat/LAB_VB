@@ -9,8 +9,8 @@
     End Sub
 
     Private Sub radMember_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radMember.CheckedChanged
-        gpbPaid.Enabled = True
         radPaid.Checked = True
+        gpbPaid.Enabled = True
         radCredit.Checked = False
         lblCredit.Text = ""
         lblDiscount.Text = ""
@@ -46,7 +46,7 @@
                 decDiscount = dectotal * 0
             ElseIf dectotal < 5000 Then
                 decDiscount = dectotal * 5 / 100
-            ElseIf dectotal < 1000 Then
+            ElseIf dectotal < 10000 Then
                 decDiscount = dectotal * 10 / 100
             Else
                 decDiscount = dectotal * 0.15
@@ -74,6 +74,7 @@
         End If
     End Sub
 
-   
-    
+    Private Sub radPaid_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radPaid.CheckedChanged
+
+    End Sub
 End Class

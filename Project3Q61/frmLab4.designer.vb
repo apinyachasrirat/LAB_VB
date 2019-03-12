@@ -31,30 +31,30 @@ Partial Class frmLab4
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.lblSumSalary = New System.Windows.Forms.Label()
+        Me.lblYearSalary = New System.Windows.Forms.Label()
         Me.lblBonus = New System.Windows.Forms.Label()
-        Me.lblIncome = New System.Windows.Forms.Label()
+        Me.lblAllIncome = New System.Windows.Forms.Label()
         Me.lblAllowance = New System.Windows.Forms.Label()
         Me.lblTax = New System.Windows.Forms.Label()
         Me.txtSale = New System.Windows.Forms.TextBox()
         Me.txtSalary = New System.Windows.Forms.TextBox()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.radDate = New System.Windows.Forms.RadioButton()
+        Me.radLongDate = New System.Windows.Forms.RadioButton()
         Me.radGenDate = New System.Windows.Forms.RadioButton()
         Me.radShortDate = New System.Windows.Forms.RadioButton()
-        Me.btnProcess = New System.Windows.Forms.Button()
+        Me.btnCalTax = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label1.Location = New System.Drawing.Point(142, 19)
+        Me.Label1.Location = New System.Drawing.Point(201, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(298, 23)
+        Me.Label1.Size = New System.Drawing.Size(199, 23)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "โปรแกรมคำนาณภาษี (อย่างหยาบ)"
+        Me.Label1.Text = "โปรแกรมคำนาณภาษี "
         '
         'Label2
         '
@@ -128,15 +128,15 @@ Partial Class frmLab4
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "ภาษีที่ต้องชำระ"
         '
-        'lblSumSalary
+        'lblYearSalary
         '
-        Me.lblSumSalary.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblSumSalary.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lblSumSalary.Location = New System.Drawing.Point(206, 187)
-        Me.lblSumSalary.Name = "lblSumSalary"
-        Me.lblSumSalary.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.lblSumSalary.Size = New System.Drawing.Size(170, 23)
-        Me.lblSumSalary.TabIndex = 2
+        Me.lblYearSalary.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblYearSalary.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.lblYearSalary.Location = New System.Drawing.Point(206, 187)
+        Me.lblYearSalary.Name = "lblYearSalary"
+        Me.lblYearSalary.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lblYearSalary.Size = New System.Drawing.Size(170, 23)
+        Me.lblYearSalary.TabIndex = 2
         '
         'lblBonus
         '
@@ -148,15 +148,15 @@ Partial Class frmLab4
         Me.lblBonus.Size = New System.Drawing.Size(170, 23)
         Me.lblBonus.TabIndex = 2
         '
-        'lblIncome
+        'lblAllIncome
         '
-        Me.lblIncome.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblIncome.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.lblIncome.Location = New System.Drawing.Point(206, 266)
-        Me.lblIncome.Name = "lblIncome"
-        Me.lblIncome.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.lblIncome.Size = New System.Drawing.Size(170, 23)
-        Me.lblIncome.TabIndex = 2
+        Me.lblAllIncome.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblAllIncome.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.lblAllIncome.Location = New System.Drawing.Point(206, 266)
+        Me.lblAllIncome.Name = "lblAllIncome"
+        Me.lblAllIncome.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lblAllIncome.Size = New System.Drawing.Size(170, 23)
+        Me.lblAllIncome.TabIndex = 2
         '
         'lblAllowance
         '
@@ -208,8 +208,8 @@ Partial Class frmLab4
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.GroupBox1.Controls.Add(Me.radDate)
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.radLongDate)
         Me.GroupBox1.Controls.Add(Me.radGenDate)
         Me.GroupBox1.Controls.Add(Me.radShortDate)
         Me.GroupBox1.Location = New System.Drawing.Point(430, 77)
@@ -219,16 +219,16 @@ Partial Class frmLab4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "รูปแบบวันที่"
         '
-        'radDate
+        'radLongDate
         '
-        Me.radDate.AutoSize = True
-        Me.radDate.Location = New System.Drawing.Point(25, 130)
-        Me.radDate.Name = "radDate"
-        Me.radDate.Size = New System.Drawing.Size(121, 17)
-        Me.radDate.TabIndex = 2
-        Me.radDate.TabStop = True
-        Me.radDate.Text = "วันที่แบบ Long Date"
-        Me.radDate.UseVisualStyleBackColor = True
+        Me.radLongDate.AutoSize = True
+        Me.radLongDate.Location = New System.Drawing.Point(25, 130)
+        Me.radLongDate.Name = "radLongDate"
+        Me.radLongDate.Size = New System.Drawing.Size(121, 17)
+        Me.radLongDate.TabIndex = 2
+        Me.radLongDate.TabStop = True
+        Me.radLongDate.Text = "วันที่แบบ Long Date"
+        Me.radLongDate.UseVisualStyleBackColor = True
         '
         'radGenDate
         '
@@ -252,30 +252,30 @@ Partial Class frmLab4
         Me.radShortDate.Text = "วันที่แบบ Short Date"
         Me.radShortDate.UseVisualStyleBackColor = True
         '
-        'btnProcess
+        'btnCalTax
         '
-        Me.btnProcess.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnProcess.Location = New System.Drawing.Point(432, 271)
-        Me.btnProcess.Name = "btnProcess"
-        Me.btnProcess.Size = New System.Drawing.Size(176, 89)
-        Me.btnProcess.TabIndex = 3
-        Me.btnProcess.Text = "คำนวณ"
-        Me.btnProcess.UseVisualStyleBackColor = False
+        Me.btnCalTax.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCalTax.Location = New System.Drawing.Point(432, 271)
+        Me.btnCalTax.Name = "btnCalTax"
+        Me.btnCalTax.Size = New System.Drawing.Size(176, 89)
+        Me.btnCalTax.TabIndex = 3
+        Me.btnCalTax.Text = "คำนวณ"
+        Me.btnCalTax.UseVisualStyleBackColor = False
         '
         'frmLab4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(648, 412)
-        Me.Controls.Add(Me.btnProcess)
+        Me.Controls.Add(Me.btnCalTax)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtSalary)
         Me.Controls.Add(Me.txtSale)
         Me.Controls.Add(Me.lblTax)
         Me.Controls.Add(Me.lblAllowance)
-        Me.Controls.Add(Me.lblIncome)
+        Me.Controls.Add(Me.lblAllIncome)
         Me.Controls.Add(Me.lblBonus)
-        Me.Controls.Add(Me.lblSumSalary)
+        Me.Controls.Add(Me.lblYearSalary)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -287,7 +287,7 @@ Partial Class frmLab4
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmLab4"
-        Me.Text = "frmAssign4"
+        Me.Text = "frmLab4"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -303,17 +303,17 @@ Partial Class frmLab4
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents lblSumSalary As System.Windows.Forms.Label
+    Friend WithEvents lblYearSalary As System.Windows.Forms.Label
     Friend WithEvents lblBonus As System.Windows.Forms.Label
-    Friend WithEvents lblIncome As System.Windows.Forms.Label
+    Friend WithEvents lblAllIncome As System.Windows.Forms.Label
     Friend WithEvents lblAllowance As System.Windows.Forms.Label
     Friend WithEvents lblTax As System.Windows.Forms.Label
     Friend WithEvents txtSale As System.Windows.Forms.TextBox
     Friend WithEvents txtSalary As System.Windows.Forms.TextBox
     Friend WithEvents lblDate As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents radDate As System.Windows.Forms.RadioButton
+    Friend WithEvents radLongDate As System.Windows.Forms.RadioButton
     Friend WithEvents radGenDate As System.Windows.Forms.RadioButton
     Friend WithEvents radShortDate As System.Windows.Forms.RadioButton
-    Friend WithEvents btnProcess As System.Windows.Forms.Button
+    Friend WithEvents btnCalTax As System.Windows.Forms.Button
 End Class

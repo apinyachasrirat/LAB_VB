@@ -1,6 +1,4 @@
 ﻿Public Class frmLab7
-
-
     Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
         Dim M As Integer
         If Not IsNumeric(txtAdd.Text) Then
@@ -114,5 +112,9 @@
         Else
             btnAdd.Enabled = True
         End If
+    End Sub
+
+    Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        Me.Close()
     End Sub
 End Class

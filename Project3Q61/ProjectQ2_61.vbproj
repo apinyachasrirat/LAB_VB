@@ -50,6 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -72,6 +73,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmLab10.Designer.vb">
+      <DependentUpon>frmLab10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLab12.Designer.vb">
+      <DependentUpon>frmLab12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab12.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLab6.Designer.vb">
       <DependentUpon>frmLab6.vb</DependentUpon>
     </Compile>
@@ -127,6 +140,18 @@
     <Compile Include="frmPractice1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPractice10.Designer.vb">
+      <DependentUpon>frmPractice10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPractice10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPractice11.Designer.Vb">
+      <DependentUpon>frmPractice11.Vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPractice11.Vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPractice2.Designer.vb">
       <DependentUpon>frmPractice2.vb</DependentUpon>
     </Compile>
@@ -163,6 +188,18 @@
     <Compile Include="frmPractice8.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLab11.Designer.vb">
+      <DependentUpon>frmLab11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miterm.Designer.vb">
+      <DependentUpon>miterm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="miterm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -186,6 +223,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmLab10.resx">
+      <DependentUpon>frmLab10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLab12.resx">
+      <DependentUpon>frmLab12.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLab6.resx">
       <DependentUpon>frmLab6.vb</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +256,12 @@
     <EmbeddedResource Include="frmPractice1.resx">
       <DependentUpon>frmPractice1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice10.resx">
+      <DependentUpon>frmPractice10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice11.resx">
+      <DependentUpon>frmPractice11.Vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPractice2.resx">
       <DependentUpon>frmPractice2.vb</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +280,12 @@
     <EmbeddedResource Include="frmPractice8.resx">
       <DependentUpon>frmPractice8.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLab11.resx">
+      <DependentUpon>frmLab11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miterm.resx">
+      <DependentUpon>miterm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -242,6 +297,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

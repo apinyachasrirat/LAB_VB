@@ -70,4 +70,9 @@
         Dim frmMyP8 As frmPractice8 = New frmPractice8
         frmMyP8.Show()
     End Sub
+
+    Private Sub ใบงานท8ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ใบงานท8ToolStripMenuItem.Click
+        Dim frmMyL8 As frmLab8 = New frmLab8
+        frmMyL8.Show()
+    End Sub
 End Class

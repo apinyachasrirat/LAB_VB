@@ -22,3 +22,10 @@ D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice7.resources
 D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice6.resources
 D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab8.resources
 D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice8.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab10.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.miterm.resources
+D:\Project3Q61\Project3Q61\bin\Debug\lab1.exe.config
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab12.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice10.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmPractice11.resources
+D:\Project3Q61\Project3Q61\obj\x86\Debug\lab1.frmLab11.resources

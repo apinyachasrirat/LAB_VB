@@ -1,18 +1,27 @@
 ﻿Public Class frmLab6
     Dim Price As Double
-    Dim message As DialogResult
+    Dim Message As DialogResult
 
-    Private Sub chkCarForMe_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkCarForMe.CheckedChanged
+    Private Sub chkCarForMe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkCarForMe.Click
         Dim Free1, Free2, Free3 As Integer
         Free1 = lblFree1.Text
         Free2 = lblFree2.Text
         Free3 = lblFree3.Text
         If chkCarForMe.Checked = False Then
-            message = MessageBox.Show("คุณต้องการยกเลิกการซื้อรถหรือไม่", "***เตือน***", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2)
-            If message = Windows.Forms.DialogResult.Yes Then
-                lblPaidPrice.Text = ""
+            Message = MessageBox.Show("คุณต้องการยกเลิกการซื้อรถหรือไม่", "***เตือน***", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2)
+            If Message = Windows.Forms.DialogResult.Yes Then
                 GroupBox1.Enabled = False
                 GroupBox2.Enabled = False
+                chkItemsAdd1.Checked = False
+                chkItemsAdd2.Checked = False
+
+                chkItemsAdd3.Checked = False
+                chkItemsAdd4.Checked = False
+                chkFree1.Checked = False
+                chkFree2.Checked = False
+                chkFree3.Checked = False
+                lblPaidPrice.Text = ""
+
             Else
                 chkCarForMe.Checked = True
                 GroupBox1.Enabled = True
@@ -102,4 +111,5 @@
     Private Sub frmLab6_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lblPaidPrice.Text = ""
     End Sub
+
 End Class

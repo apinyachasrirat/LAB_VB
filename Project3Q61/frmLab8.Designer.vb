@@ -133,21 +133,21 @@ Partial Class frmLab8
         Me.txtSubject.Location = New System.Drawing.Point(34, 308)
         Me.txtSubject.Name = "txtSubject"
         Me.txtSubject.Size = New System.Drawing.Size(138, 20)
-        Me.txtSubject.TabIndex = 3
+        Me.txtSubject.TabIndex = 0
         '
         'txtScore
         '
         Me.txtScore.Location = New System.Drawing.Point(178, 308)
         Me.txtScore.Name = "txtScore"
         Me.txtScore.Size = New System.Drawing.Size(138, 20)
-        Me.txtScore.TabIndex = 3
+        Me.txtScore.TabIndex = 1
         '
         'txtCredit
         '
         Me.txtCredit.Location = New System.Drawing.Point(322, 308)
         Me.txtCredit.Name = "txtCredit"
         Me.txtCredit.Size = New System.Drawing.Size(138, 20)
-        Me.txtCredit.TabIndex = 3
+        Me.txtCredit.TabIndex = 2
         '
         'btnAdd
         '
@@ -155,7 +155,7 @@ Partial Class frmLab8
         Me.btnAdd.Location = New System.Drawing.Point(466, 301)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(62, 29)
-        Me.btnAdd.TabIndex = 4
+        Me.btnAdd.TabIndex = 3
         Me.btnAdd.Text = "เพิ่ม"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
